@@ -113,7 +113,7 @@
 /*---------- FOOTER SECTION ----------*/
 
 .footer-all{
-    height: 8vh;
+    height: 9vh;
     width: 100%;
     background-color: var(--secondary-clr);
 }
@@ -165,9 +165,5 @@
 @media (min-width: 360px) and (max-width: 480px) {
     main{
         margin-top: -1.5rem;
-    }
-
-    .foot-panel4 {
-        height: 7rem;
     }
 }
