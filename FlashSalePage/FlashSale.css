@@ -24,7 +24,7 @@
 }
 
 .flash-sale-product-offer p{
-    left: 0;
+    /* left: 0; */
     position: absolute;
     height: 1.5rem;
     width: 5rem;
@@ -113,6 +113,13 @@
 /*------------ MEDIA QUERYS FOR MOBILE PHONE SCREEN ------------*/
 
 @media screen and (max-width: 576px){
+    main{
+        margin-top: -3rem;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 480px) {
     main{
         margin-top: -3rem;
     }
