@@ -1385,7 +1385,7 @@ body.dark-theme .cart-slider-footer {
     }
 
     .product-section {
-        margin-top: -5.9rem;
+        margin-top: -5.8rem;
         gap: 1rem;
         grid-template-columns: repeat(1, 1fr);
     }
