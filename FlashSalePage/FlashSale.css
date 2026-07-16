@@ -1,0 +1,119 @@
+/* PRODUCT SECTION */
+
+.flash-sale-product-section{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem .5rem;
+    background-color: var(--bg-white-clr);
+}
+
+.flash-sale-product-container{
+    height: 20rem;
+    max-width: 15.2rem;
+    background-color: var(--bg-white-clr);
+    box-shadow: var(--box-shadow2);
+    padding: .5rem;
+}
+
+.flash-sale-product-offer{
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.flash-sale-product-offer p{
+    left: 0;
+    position: absolute;
+    height: 1.5rem;
+    width: 5rem;
+    font-size: .7rem;
+    color: var(--text-clr);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.flash-sale-product-offer span{
+    position: absolute;
+    right: 0;
+    height: 1.5rem;
+    width: 4rem;
+    font-size: .7rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--text-clr);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.flash-sale-product-offer img{
+    height: 12.5rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flash-sale-product-details{
+    max-height: 2rem;
+    max-width: 100%;
+    margin-block: .5rem;
+    overflow: hidden;
+}
+
+.flash-sale-product-ratings{
+    max-height: 1rem;
+    justify-content: space-around;
+    margin-block: .5rem;
+}
+
+.add-to-cart{
+    margin-block: .5rem;
+}
+
+
+/*---------- FOOTER SECTION ----------*/
+
+.footer-all{
+    height: 8vh;
+    width: 100%;
+    background-color: var(--secondary-clr);
+}
+
+.copy-right span{
+    color: var(--text-clr);
+    font-weight: 400;
+}
+
+
+
+
+
+
+/*------------ MEDIA QUERYS FOR LAPTOP SCREEN ------------ */
+
+@media screen and (max-width: 992px){
+    main{
+        margin-top: -1.5rem;
+    }
+}
+
+
+
+/*------------ MEDIA QUERYS FOR TABLET SCREEN ------------*/
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: -2rem;
+    }
+}
+
+/*------------ MEDIA QUERYS FOR MOBILE PHONE SCREEN ------------*/
+
+@media screen and (max-width: 576px){
+    main{
+        margin-top: -3rem;
+    }
+}

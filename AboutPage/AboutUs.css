@@ -1,0 +1,122 @@
+/* ABOUT US SECTION */
+
+.section {
+    margin: 1rem;
+}
+
+.story-section{
+    min-height: 10rem;
+}
+
+.story-section p{
+    margin: 1rem;
+    border-left: 5px solid var(--hover-clr);
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+.mission-quote {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 1rem;
+    padding-block: .5rem;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    background-color: var(--p-text-clr);
+    border-left: 5px solid var(--hover-clr);
+}
+
+.features-grid {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 1rem;
+    background-color: var(--secondary-clr);
+    border-radius: .5rem;
+}
+
+.team-member {
+    border-left: 5px solid var(--hover-clr);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--p-text-clr);
+    padding: 1rem;
+    border-radius: 5px;
+    gap: .5rem;
+}
+
+.team-member p{
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.contact-section {
+    height: 8rem;
+    gap: 1rem;
+    flex-direction: column;
+    margin: 1rem;
+    border-top: 1px dashed var(--secondary-clr);
+}
+
+.contact-buttons {
+    gap: 2rem;
+}
+
+/*---------- FOOTER SECTION ----------*/
+
+.footer-all{
+    height: 8vh;
+    width: 100%;
+    background-color: var(--secondary-clr);
+}
+
+.copy-right span{
+    color: var(--text-clr);
+    font-weight: 400;
+}
+
+
+
+
+
+/*------------ MEDIA QUERYS FOR LAPTOP SCREEN ------------ */
+
+@media screen and (max-width: 992px){
+    main{
+        margin-top: -1.5rem;
+    }
+}
+
+
+
+/*------------ MEDIA QUERYS FOR TABLET SCREEN ------------*/
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: -2rem;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        min-width: 100%;
+    }
+}
+
+/*------------ MEDIA QUERYS FOR MOBILE PHONE SCREEN ------------*/
+
+@media screen and (max-width: 576px){
+    main{
+        margin-top: -3rem;
+    }
+}

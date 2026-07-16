@@ -1,0 +1,163 @@
+.section {
+    margin: 1rem;
+}
+
+.contact-content-wrapper {
+    margin-block: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form-section {
+    flex: 2;
+    padding: 2rem;
+    background: var(--bg-white-clr);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow2);
+}
+
+.contact-form-section h2{
+    margin-bottom: 1rem;
+}
+
+.contact-details-section {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--bg-white-clr);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow2);
+}
+
+.contact-details-section h2{
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--black-clr);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--hover-clr);
+    border-radius: .2rem;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: var(--btn-bg-clr);
+    color: var(--text-clr);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1.5rem;
+    padding-block: 1rem;
+    border-block: 1px dotted var(--hover-clr);
+}
+
+.detail-item p{
+    font-size: .9rem;
+}
+
+.detail-item h2{
+    font-size: .65rem;
+    margin: auto;
+}
+
+.detail-item strong {
+     color: var(--black-clr);
+}
+
+.contact-icon {
+    font-size: 1.5em;
+    color: var(--btn-bg-clr);
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+
+.follow-us{
+    margin-top: 1rem;
+}
+
+.social-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+    background-color: var(--text-clr);
+    text-decoration: none;
+    box-shadow: var(--box-shadow2);
+}
+
+.social-icon i{
+    font-size: 1.5rem;
+    color: var(--btn-bg-clr);
+}
+
+
+/*---------- FOOTER SECTION ----------*/
+
+.footer-all{
+    height: 8vh;
+    width: 100%;
+    background-color: var(--secondary-clr);
+}
+
+.copy-right span{
+    color: var(--text-clr);
+    font-weight: 400;
+}
+
+
+
+
+
+/*------------ MEDIA QUERYS FOR LAPTOP SCREEN ------------ */
+
+@media screen and (max-width: 992px){
+    main{
+        margin-top: -1.5rem;
+    }
+
+    .contact-content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-details-section {
+        order: -1;
+    }
+}
+
+
+
+/*------------ MEDIA QUERYS FOR TABLET SCREEN ------------*/
+
+@media screen and (max-width: 768px) {
+    main{
+        margin-top: -2rem;
+    }
+}
+
+/*------------ MEDIA QUERYS FOR MOBILE PHONE SCREEN ------------*/
+
+@media screen and (max-width: 576px){
+    main{
+        margin-top: -3rem;
+    }
+}
