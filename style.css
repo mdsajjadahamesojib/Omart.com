@@ -1374,7 +1374,7 @@ body.dark-theme .cart-slider-footer {
     }
 
     .image-btn-container {
-        top: 2rem;
+        top: 2.5rem;
     }
 
     .image-item img {
@@ -1385,7 +1385,7 @@ body.dark-theme .cart-slider-footer {
     }
 
     .product-section {
-        margin-top: -4rem;
+        margin-top: -5.9rem;
         gap: 1rem;
         grid-template-columns: repeat(1, 1fr);
     }
