@@ -1374,18 +1374,18 @@ body.dark-theme .cart-slider-footer {
     }
 
     .image-btn-container {
-        top: 2rem;
+        top: 2.5rem;
     }
 
     .image-item img {
         min-width: 100%;
-        height: 38vh;
+        height: 36vh;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .product-section {
-        margin-top: -5.8rem;
+        margin-top: -5rem;
         gap: 1rem;
         grid-template-columns: repeat(1, 1fr);
     }
