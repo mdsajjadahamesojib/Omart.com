@@ -161,3 +161,9 @@
         margin-top: -3rem;
     }
 }
+
+@media (min-width: 360px) and (max-width: 480px) {
+    main{
+        margin-top: -1.5rem;
+    }
+}
