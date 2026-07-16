@@ -1354,11 +1354,8 @@ body.dark-theme .cart-slider-footer {
     }
 
     .nav-list-element-poppup {
-        margin-top: 5rem;
-    }
-
-    .nav-list-element-poppup {
         width: 100%;
+        height: 92%;
         left: 0;
         top: 0;
         height: auto;
