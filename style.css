@@ -1336,12 +1336,13 @@ body.dark-theme .cart-slider-footer {
     }
 
     .search-input {
-        height: 5vh;
-        width: 2rem;
+        height: 4vh;
+        width: 1.5rem;
     }
 
     .search-icon {
-        height: 5vh;
+        height: 4vh;
+        width: 4vh;
     }
 
     .icon-size {
