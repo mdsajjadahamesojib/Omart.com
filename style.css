@@ -648,7 +648,7 @@ main {
 
 .product-section {
     max-width: 100vw;
-    margin-inline: 1rem;
+    margin-inline: .5rem;
     position: relative;
     background-color: transparent;
     margin-top: -12rem;
@@ -665,7 +665,7 @@ main {
 .card-product-container {
     width: 100%;
     flex-wrap: wrap;
-    gap: 1rem .5rem;
+    gap: 1rem .7rem;
 }
 
 .card-product {
@@ -1417,11 +1417,12 @@ body.dark-theme .cart-slider-footer {
 
     .product-section {
         margin-top: -6rem;
+        margin-inline: 0rem;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .card-product-container {
-        gap: .5rem .5rem;
+        gap: .8rem .8rem;
     }
 
     .card-product {
