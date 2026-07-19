@@ -1417,13 +1417,16 @@ body.dark-theme .cart-slider-footer {
 
     .product-section {
         margin-top: -6rem;
-        /* gap: 1rem; */
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .card-product-container {
+        gap: .5rem .5rem;
+    }
+
     .card-product {
-        transform: scale(0.6); /* কার্ডটি আরও ছোট হয়ে যাবে */
-        margin: -3rem -2.5rem;
+        transform: scale(0.6);
+        margin: -3.5rem -2.5rem;
     }
 
     .foot-panel4 {
