@@ -673,6 +673,8 @@ main {
     width: 15rem;
     background-color: var(--bg-white-clr);
     box-shadow: var(--box-shadow2);
+
+    transform-origin: center;
 }
 
 .card-heading {
@@ -1415,21 +1417,13 @@ body.dark-theme .cart-slider-footer {
 
     .product-section {
         margin-top: -6rem;
-        gap: 1rem;
-        grid-template-columns: repeat(1, 1fr);
+        /* gap: 1rem; */
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card-product {
-        /* ফোনের জন্য উইথ পার্সেন্টেজে করে দেওয়া হলো এবং হাইট ফিক্সড থেকে অনুপাতে নিয়ে যাওয়া হলো */
-        width: 45%;            /* স্ক্রিনের সাইজ অনুযায়ী কার্ডের উইথ অটোমেটিক ছোট হবে */
-        height: auto;          /* আগের ফিক্সড ১৯ রেম হাইট বাতিল করার জন্য */
-        aspect-ratio: 15 / 19; /* উইথ ছোট হওয়ার সাথে সাথে হাইটও সমান অনুপাতে ছোট হবে */
-    }
-
-    /* কার্ডের ভেতরের ইমেজের হাইটও যেন আনুপাতিক হারে ছোট হয় */
-    .card-img img {
-        height: 100%;          /* ইমেজের কন্টেইনার অনুযায়ী হাইট নেবে */
-        object-fit: cover;     /* ইমেজ যেন চ্যাপ্টা বা নষ্ট না হয়ে যায় */
+        transform: scale(0.6); /* কার্ডটি আরও ছোট হয়ে যাবে */
+        margin: -3rem -2.5rem;
     }
 
     .foot-panel4 {
