@@ -665,7 +665,7 @@ main {
 .card-product-container {
     width: 100%;
     flex-wrap: wrap;
-    gap: 1rem .7rem;
+    gap: 1rem .8rem;
 }
 
 .card-product {
