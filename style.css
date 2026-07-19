@@ -1319,10 +1319,18 @@ body.dark-theme .cart-slider-footer {
     }
 
     .product-section {
-        margin: 0 1rem;
         margin-top: -7.5rem;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 4rem;
+        margin-inline: 0rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-product-container {
+        gap: .3rem .8rem;
+    }
+
+    .card-product {
+        transform: scale(0.65);
+        margin: -3rem -2.5rem;
     }
 
     .foot-panel2 ul a {
