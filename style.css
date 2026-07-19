@@ -1422,7 +1422,7 @@ body.dark-theme .cart-slider-footer {
     }
 
     .card-product-container {
-        gap: .8rem .8rem;
+        gap: 1rem 1.3rem;
     }
 
     .card-product {
