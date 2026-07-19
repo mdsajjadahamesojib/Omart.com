@@ -1422,12 +1422,12 @@ body.dark-theme .cart-slider-footer {
     }
 
     .card-product-container {
-        gap: 1rem 1.4rem;
+        gap: .5rem .8rem;
     }
 
     .card-product {
-        transform: scale(0.6);
-        margin: -3.5rem -2.5rem;
+        transform: scale(0.65);
+        margin: -3rem -2.5rem;
     }
 
     .foot-panel4 {
