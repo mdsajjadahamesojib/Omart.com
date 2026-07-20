@@ -131,7 +131,6 @@ async function loadEcomProducts() {
 }
 
 //Function to render the product.
-
 function renderProducts(products) {
     if (!productContainer) return;
 
@@ -144,7 +143,6 @@ function renderProducts(products) {
     productContainer.innerHTML = products.map(product => {
 
         // Rating Logic.
-
         let rating = product.rating;
         const integerPart = Math.floor(rating); 
         const decimalPart = rating - integerPart; 
@@ -156,7 +154,6 @@ function renderProducts(products) {
         }
 
         // Star Generation Logic.
-        
         const floorRating = Math.floor(rating);
         let starsHTML = '';
         for (let i = 0; i < 5; i++) {
@@ -171,8 +168,9 @@ function renderProducts(products) {
 
         const halfPriceInBDT = Math.round(product.price * 60);
 
+        // কার্ডে onclick যুক্ত করা হয়েছে
         return `
-            <div class="card-product">
+            <div class="card-product" onclick="goToProductDetails(${product.id})">
 
                 <div class="card-heading flex">
                     <h1>${product.title}</h1>
@@ -195,7 +193,7 @@ function renderProducts(products) {
                 </div>
 
                 <div class="cart-btn flex">
-                    <a href="product-details.html?id=${product.id}">See more</a>
+                    <a href="javascript:void(0)">See more</a>
                 </div>
 
             </div>
@@ -203,8 +201,12 @@ function renderProducts(products) {
     }).join('');
 }
 
-/*------------ Search Filter Logic -------------*/
+// কার্ডে ক্লিক করলে ফোল্ডারের ভেতরের ফাইলে নিয়ে যাবে
+function goToProductDetails(productId) {
+    window.location.href = `ProductDetailsPage/ProductDetails.html?id=${productId}`;
+}
 
+/*------------ Search Filter Logic -------------*/
 if (searchInput) {
     searchInput.addEventListener('input', (e) => {
         const searchTerm = e.target.value.toLowerCase();

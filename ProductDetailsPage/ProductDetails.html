@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Product Details Page</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ProductDetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <!------------ NAVBAR SECTION ------------>
+        <section class="navbar">
+
+            <!------------ NAVBAR ELEMENT SECTION ------------>
+            <div class="nav-element flex">
+
+                <!--------------- LOGO SECTION --------------->
+                <div class="nav-logo flex border margin">
+                    <img src="../image/Omart-Logo.png" alt="Omart-Logo">
+                </div>
+
+                <!--------------- LOCATION SECTION --------------->
+                <div class="location flex border margin box-size">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="nav-address">
+                        <span>
+                            <p class="pera-1">Deliver to</p>
+                            <p class="pera-2">Bangladesh</p>
+                        </span>
+                    </div>
+                </div>
+
+                <!--------------- NAVBAR SEARCH --------------->
+                <div class="nav-search border flex margin">
+                    <input placeholder="Search Omart Products" class="search-input" />
+                    <div class="search-icon flex margin">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <!--------------- LOGIN SECTION --------------->
+                <div class="login-section border flex margin box-size">
+
+                    <button class="nav-btn flex" onclick="openPopup()">
+                        <i class="fa-solid fa-circle-user icon-size"></i>
+                        <p class="pera-2">Log in</p>
+                    </button>
+                    <div class="popup-backdrop" id="backdrop" onclick="closePopup()"></div>
+
+                    <!------------ POPUP LOGIN CONTAINER ------------>
+                    <div class="login-container" id="popup">
+                        <div class="login-header">
+                            <h2>Welcome Back</h2>
+                            <p>Please enter your details to <strong>Sign in</strong></p>
+                            <button onclick="closePopup()">
+                                <i class="fa-solid fa-xmark popup-close-btn"></i>
+                            </button>
+                        </div>
+
+                        <form action="#" method="POST">
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Enter your password" required>
+                            </div>
+
+                            <div class="remember-forgot">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                                <a href="#">Forgot Password?</a>
+                            </div>
+
+                            <button type="submit" class="login-btn">Log In</button>
+                        </form>
+
+                        <div class="signup-link">
+                            Don't have an account? <a href="#">Sign Up</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--------------- CART SECTION --------------->
+                <div class="cart-section border flex margin box-size">
+                    <a href="#" class="nav-btn flex">
+                        <i class="fa-solid fa-cart-arrow-down icon-size"></i>
+                        <p class="pera-2">Cart</p>
+                    </a>
+                </div>
+            </div>
+
+            <!------------ NAVLIST SECTION ------------>
+            <div class="nav-list">
+
+                <!------------ NAVLIST ELEMENT POPUP ------------>
+                <div class="nav-list-element-bars flex">
+                    <button class="nav-list-element-btn" onclick="openNavlistPopup()">
+                        <i class="fa-solid fa-bars icon"></i>
+                    </button>
+                </div>
+
+                <!------------ NAVLIST POPPUP ELEMENT ------------>
+                <div class="nav-list-element-poppup flex" id="navlist-popup">
+                    <div class="nav-element-close-btn flex">
+                        <button class="close-btn flex" onclick="closeNavlistPopup()">
+                            <i class="fa-solid fa-xmark icon"></i>
+                        </button>
+                    </div>
+                    <ul class="flex">
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="../index.html">
+                                    <i class="fa-solid fa-house-fire icon"></i>
+                                    <p class="pera-2">Home Page</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="../FlashSalePage/FlashSale.html">
+                                    <i class="fa-solid fa-bolt-lightning icon"></i>
+                                    <p class="pera-2">Flash Sale</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="../FashionPage/Fashion.html">
+                                    <i class="fa-solid fa-hat-cowboy icon"></i>
+                                    <p class="pera-2">Fashion</p>
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="../AboutPage/AboutUs.html">
+                                    <i class="fa-solid fa-circle-question icon"></i>
+                                    <p class="pera-2">About Us</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="../ContactPage/ContactUs.html">
+                                    <i class="fa-solid fa-square-phone icon"></i>
+                                    <p class="pera-2">Contact Us</p>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="nav-list-element btn">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-user icon"></i>
+                                    <p class="pera-2">Account</p>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+                <!------------ NAVLIST ELEMENT ------------>
+                <ul>
+                    <div class="nav-list-element hide">
+                        <li>
+                            <a href="../index.html">
+                                <i class="fa-solid fa-house-fire icon"></i>
+                                <p class="pera-2">Home Page</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="nav-list-element hide">
+                        <li>
+                            <a href="../FlashSalePage/FlashSale.html">
+                                <i class="fa-solid fa-bolt-lightning icon"></i>
+                                <p class="pera-2">Flash Sale</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="nav-list-element hide">
+                        <li>
+                            <a href="../FashionPage/Fashion.html">
+                                <i class="fa-solid fa-hat-cowboy icon"></i>
+                                <p class="pera-2">Fashion</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="nav-list-element hide">
+                        <li>
+                            <a href="../AboutPage/AboutUs.html">
+                                <i class="fa-solid fa-circle-question icon"></i>
+                                <p class="pera-2">About Us</p>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="nav-list-element hide">
+                        <li>
+                            <a href="../ContactPage/ContactUs.html">
+                                <i class="fa-solid fa-square-phone icon"></i>
+                                <p class="pera-2">Contact Us</p>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+                <!------------ DARK MODE TOGGLE ------------>
+                <div class="color-mode flex">
+                    <button class="color-mode-cng-btn" id="dark-mode">
+                        <i class="fa-solid fa-moon font-1" id="moonicon"></i>
+                        <i class="fa-solid fa-sun font-1" id="sunicon"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+
+            <!-- 1. Product Details Container -->
+            <div class="product-container">
+                <div class="image-section">
+                    <div class="main-img-container">
+                        <img id="main-product-image" src="#" alt="Product">
+                    </div>
+                    <div class="thumbnail-container">
+                        <!-- <img class="thumb-img active" src="#" alt="Thumb 1" onclick="changeImage(this)">
+                    <img class="thumb-img" src="#" alt="Thumb 2" onclick="changeImage(this)">
+                    <img class="thumb-img" src="#" alt="Thumb 3" onclick="changeImage(this)"> -->
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <span class="brand-name"> BRAND NAME </span>
+                    <h1 class="product-title"> PRODUCT DETAILS PAGE </h1>
+
+                    <!-- Rating Summary -->
+                    <div class="rating-summary">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(12 Customer Reviews)</span>
+                    </div>
+
+                    <div class="price-tag">00 TK</div>
+
+                    <p class="product-desc">
+                        This is a modern, highly responsive e-commerce product page template. Perfect for showcasing any
+                        type of retail product with custom variants, features, and sleek layout elements.
+                    </p>
+
+                    <div class="options-group">
+                        <div class="options-title">Color:</div>
+                        <div class="color-pickers">
+                            <div class="color-dot selected" style="background-color: #3b82f6;"
+                                onclick="selectColor(this)">
+                            </div>
+                            <div class="color-dot" style="background-color: #ec4899;" onclick="selectColor(this)"></div>
+                            <div class="color-dot" style="background-color: #10b981;" onclick="selectColor(this)"></div>
+                        </div>
+                    </div>
+
+                    <div class="options-group">
+                        <div class="options-title">
+                            Size / Variant:
+                        </div>
+                        <div class="size-pickers">
+                            <button class="size-btn selected" onclick="selectSize(this)">M</button>
+                            <button class="size-btn" onclick="selectSize(this)">L</button>
+                            <button class="size-btn" onclick="selectSize(this)">XL</button>
+                        </div>
+                    </div>
+
+                    <!-- Action Section -->
+                    <div class="action-section">
+                        <div class="qty-and-cart">
+                            <div class="options-title">
+                                Quantity:
+                            </div>
+                            <div class="quantity-selector">
+                                <button class="qty-btn flex" onclick="updateQuantity(-1)">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="text" id="qty-count" class="qty-input" value="1" readonly>
+                                <button class="qty-btn flex" onclick="updateQuantity(1)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                            <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Product Specifications Section -->
+            <div class="specs-container">
+                <h2 class="section-title">Product Specifications</h2>
+                <table class="specs-table">
+                    <tr>
+                        <td class="specs-label">Material / Composition</td>
+                        <td class="specs-value">Premium Grade-A Quality</td>
+                    </tr>
+                    <tr>
+                        <td class="specs-label">Size / Weight</td>
+                        <td class="specs-value">Standard Size / 400g</td>
+                    </tr>
+                    <tr>
+                        <td class="specs-label">Warranty</td>
+                        <td class="specs-value">6 Months Replacement Warranty</td>
+                    </tr>
+                    <tr>
+                        <td class="specs-label">Origin</td>
+                        <td class="specs-value">Made in Bangladesh</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 3. Customer Reviews Section -->
+            <div class="reviews-container"></div>
+
+            <!-- 4. Related Products Section -->
+            <div class="related-container">
+                <h2 class="section-title">Related Products</h2>
+                <div class="related-products-grid">
+
+                    <!-- Related Product Card 1 -->
+                    <div class="related-card">
+                        <div class="related-img-holder">
+                            <img src="https://picsum.photos/id/103/300/300" alt="Related Product 1">
+                        </div>
+                        <div class="related-info">
+                            <h3 class="related-title">Premium Minimalist Watch</h3>
+                            <div class="related-price">$49.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product Card 2 -->
+                    <div class="related-card">
+                        <div class="related-img-holder">
+                            <img src="https://picsum.photos/id/104/300/300" alt="Related Product 2">
+                        </div>
+                        <div class="related-info">
+                            <h3 class="related-title">Ergonomic Wireless Mouse</h3>
+                            <div class="related-price">$19.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product Card 3 -->
+                    <div class="related-card">
+                        <div class="related-img-holder">
+                            <img src="https://picsum.photos/id/106/300/300" alt="Related Product 3">
+                        </div>
+                        <div class="related-info">
+                            <h3 class="related-title">Classic Leather Wallet</h3>
+                            <div class="related-price">$29.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Related Product Card 4 -->
+                    <div class="related-card">
+                        <div class="related-img-holder">
+                            <img src="https://picsum.photos/id/107/300/300" alt="Related Product 4">
+                        </div>
+                        <div class="related-info">
+                            <h3 class="related-title">Smart Fitness Tracker</h3>
+                            <div class="related-price">$39.99</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section>
+        <div class="cart-slider-backdrop" id="cart-backdrop"></div>
+        <div class="cart-slider" id="cart-slider">
+            <div class="cart-slider-header">
+                <h2>Shopping Cart (<span id="cart-count-title">0</span>)</h2>
+                <button class="cart-close-btn" id="cart-close-id">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="cart-slider-items" id="cart-items-container"></div>
+
+            <div class="cart-slider-footer">
+                <div class="cart-total">
+                    <h3>Subtotal:</h3>
+                    <h3 id="cart-subtotal-price">0 TK</h3>
+                </div>
+                <button class="checkout-btn" id="checkout-btn-id">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!------------ FOOTER ------------>
+        <div class="footer-all flex">
+            <div class="copy-right">
+                <span>&copy; 2025 <strong>Omart.com</strong> All Rights Reserved | Developed by SAS</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript Link -->
+    <script src="ProductDetails.js"></script>
+    <script src="../home.js"></script>
+    <script src="../login.js"></script>
+
+</body>
+
+</html>
